@@ -1,0 +1,26 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html>\r <html>\r   <head>\r   </head>\r   <body>\r     <h1>Studio Ghibli CRUD App</h1>\r     <img src=\"https://www.ghibli.jp/gallery/chihiro045.jpg\" alt=\"Studio Ghibli GIF\">\r     <p>Our CRUD application uses Node.js, Express, and MongoDB to showcase the enchanting world of Studio Ghibli movies. With our app, you can perform CRUD operations to manage data about your favorite Ghibli films. From Spirited Away to Princess Mononoke, our app lets you easily create, read, update, and delete movie information.</p>\r     <h2>Installation</h2>\r     <ol>\r       <li>Clone the repository: <code>git clone https://github.com/Palak807/mongodb-express-crud.git</code></li>\r       <li>Install dependencies: <code>npm install</code></li>\r       <li>Start the app: <code>npx nodemon index.js</code></li>\r       <li>Open the app in your browser at <code>http://localhost:3000</code></li>\r     </ol>\r     <h2>Usage</h2>\r     <p>Our app provides a simple and intuitive interface for managing your Ghibli movie data. You can easily add new movies, view existing ones, update their information, and delete them as needed. Our app also supports searching for movies by title or director, making it easy to find the movies you're looking for. Whether you're a fan of My Neighbor Totoro, Howl's Moving Castle, or any other Ghibli classic, our app has got you covered!</p>\r     <h2>Contributing</h2>\r     <p>We welcome contributions from the community! If you'd like to contribute to our app, please follow these steps:</p>\r     <ol>\r       <li>Fork the repository</li>\r       <li>Create a new branch: <code>git checkout -b my-new-feature</code></li>\r       <li>Make your changes</li>\r       <li>Commit your changes: <code>git commit -am 'Add some feature'</code></li>\r       <li>Push to the branch: <code>git push origin my-new-feature</code></li>\r       <li>Submit a pull request</li>\r     </ol>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Palak807/mongodb-express-crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Palak807/mongodb-express-crud/issues"
+  },
+  "homepage": "https://github.com/Palak807/mongodb-express-crud#readme"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <link rel="stylesheet" href="/css/semantic.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="ui massive menu">
+        <div class="ui container">
+          <div class="header item">
+            <a href="/" class="link">HOME</a>
+          </div>
+          <a class="item"> BLOG </a>
+          <a class="item"> CONTACT </a>
+          <a class="item"> ABOUT </a>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div class="ui container">
+        <form action="/add" class="ui form" method="POST">
+          <div class="ui three fields">
+            <div class="field">
+              <label for="sports" class="ui button white"
+                >Enter the sport</label
+              >
+              <input type="text" name="sports" />
+            </div>
+            <div class="field">
+              <label for="player" class="ui button white"
+                >Enter the player name</label
+              >
+              <input type="text" name="player" />
+            </div>
+            <div class="field">
+              <label for="year" class="ui button white"
+                >Enter the year born</label
+              >
+              <input type="text" name="year" />
+            </div>
+          </div>
+          <div class="ui fluid field">
+            <input type="submit" value="Submit" class="ui button black fluid" />
+          </div>
+        </form>
+
+        <br /><br />
+        <table class="ui table">
+          <thead>
+            <tr>
+              <th>Sports</th>
+              <th>Player Name</th>
+              <th>Year</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% clubs.forEach(function(club){ %>
+            <tr>
+              <td><%- club.sports %></td>
+              <td><%- club.player %></td>
+              <td><%- club.year %></td>
+              <td>
+                <a class="ui black button" href="/edit/<%= club._id %>"
+                  ><i class="edit outline icon"></i
+                ></a>
+              </td>
+              <td>
+                <a class="ui white button" href="/delete/<%= club._id %>"
+                  ><i class="eraser icon"></i
+                ></a>
+              </td>
+            </tr>
+
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/public/js/semantic.min.js"></script>
+  </body>
+</html>
